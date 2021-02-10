@@ -1,0 +1,38 @@
+{
+    "name": "goellner/table-on-steroids",
+    "type": "statamic-addon",
+    "description": "One of its kind; unlike anything else",
+    "keywords": [
+        "statamic",
+        "fieldtype",
+        "uuid"
+    ],
+    "homepage": "https://github.com/goellner/statamic-3-table-on-steroids",
+    "require": {
+        "statamic/cms": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Goellner\\TableOnSteroids\\": "src"
+        }
+    },
+    "authors": [
+        {
+            "name": "Stefan Göllner",
+            "email": "wassup@goellner.io",
+            "homepage": "https://goellner.dev",
+            "role": "Developer"
+        }
+    ],
+    "extra": {
+        "statamic": {
+            "name": "Table On Steroids",
+            "description": "Table On Steroids addon"
+        },
+        "laravel": {
+            "providers": [
+                "Goellner\\TableOnSteroids\\ServiceProvider"
+            ]
+        }
+    }
+}
