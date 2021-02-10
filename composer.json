@@ -1,7 +1,7 @@
 {
     "name": "goellner/table-on-steroids",
     "type": "statamic-addon",
-    "description": "One of its kind; unlike anything else",
+    "description": "Adds a CSV parser for the table fieldtype",
     "keywords": [
         "statamic",
         "fieldtype",
