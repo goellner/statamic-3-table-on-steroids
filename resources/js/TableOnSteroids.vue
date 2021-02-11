@@ -4,7 +4,8 @@
     <label class="form-group-label mt-2 mb-1">Paste your CSV into this field:</label>
     <textarea class="input-text w-full mb-2" v-model="csv" rows="4"></textarea>
     <button class="btn btn-default mb-2 mr-1" @click="csvToJavascript">Process CSV Data</button>
-    <button class="btn btn-default mb-2" @click="handleClearInput">Clear input</button>
+    <button class="btn btn-default mb-2 mr-1" @click="handleClearInput">Clear Input</button>
+    <button class="btn btn-default mb-2" @click="handleClearTable">Clear Table</button>
     <div class="text-red" v-if="error">{{ error }}</div>
   </div>
 </template>
@@ -45,6 +46,9 @@ export default {
     this.data = this.value;
   },
   methods: {
+    handleClearTable() {
+      this.data = [];
+    },
     handleClearInput() {
       this.csv = ''
     },

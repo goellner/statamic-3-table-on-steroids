@@ -119,6 +119,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 //
 //
 //
+//
 
 var Table = Vue.component('table-fieldtype');
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -152,6 +153,9 @@ var Table = Vue.component('table-fieldtype');
     this.data = this.value;
   },
   methods: {
+    handleClearTable: function handleClearTable() {
+      this.data = [];
+    },
     handleClearInput: function handleClearInput() {
       this.csv = '';
     },
@@ -7888,10 +7892,19 @@ var render = function() {
       _c(
         "button",
         {
-          staticClass: "btn btn-default mb-2",
+          staticClass: "btn btn-default mb-2 mr-1",
           on: { click: _vm.handleClearInput }
         },
-        [_vm._v("Clear input")]
+        [_vm._v("Clear Input")]
+      ),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-default mb-2",
+          on: { click: _vm.handleClearTable }
+        },
+        [_vm._v("Clear Table")]
       ),
       _vm._v(" "),
       _vm.error
