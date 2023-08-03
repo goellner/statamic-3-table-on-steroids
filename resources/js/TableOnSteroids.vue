@@ -50,7 +50,13 @@ export default {
   },
   computed: {
     delimiter() {
-      return this.useTab ? "," : this.customDelimiter
+      if (this.useTab) {
+        return "\t"
+      }
+      if (this.customDelimiter === "") {
+        return ","
+      }
+      return this.customDelimiter
     },
   },
   watch: {
@@ -78,15 +84,9 @@ export default {
     handleClearInput() {
       this.csv = ""
     },
-    convertTabs() {
-      this.csv = this.csv.replace(/\t/gm, ",")
-    },
     csvToJavascript() {
       // parse entries from pasted csv
       this.error = ""
-      if (this.useTab) {
-        this.convertTabs()
-      }
       try {
         const entries = parse(this.csv, {
           columns: true,
