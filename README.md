@@ -1,8 +1,10 @@
-# statamic-table-on-steroids
-Adds CSV import to "table" fieldtype
+# Table On Steroids
+
+> Adds CSV import to the "table" fieldtype
+
+## Features
 
 ![demo](https://github.com/goellner/statamic-3-table-on-steroids/blob/main/github/demo-table-on-steroids.gif?raw=true)
-
 
 ## Install
 

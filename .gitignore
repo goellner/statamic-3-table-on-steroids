@@ -1,6 +1,7 @@
-.DS_Store
 node_modules
 vendor
-yarn.lock
-yarn-error.log
-mix-manifest.json
+composer.lock
+.phpunit.result.cache
+.DS_Store
+.idea
+.vscode

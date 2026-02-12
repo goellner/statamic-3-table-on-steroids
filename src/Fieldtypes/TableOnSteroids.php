@@ -6,7 +6,11 @@ use Statamic\Fields\Fieldtype;
 
 class TableOnSteroids extends Fieldtype
 {
-    protected $icon = 'table';
+    protected $icon = 'add-table';
+
+    public $categories = ['special'];
+
+    protected $keywords = ['table', 'csv', 'steroids', 'goellner'];
 
     /**
      * The blank/default value.
